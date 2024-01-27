@@ -76,7 +76,7 @@ class SMOS(SMOSBase):
         logging.info(f'Информация в `doc`: {response}')
         return response
 
-    def delete_field(self, part_of_index, id):
+    def remove_field(self, part_of_index, id):
         headers = {
             'Content-Type': 'application/json',
         }
@@ -113,7 +113,7 @@ def main():
                 pass
             if platform_flag:
                 print(index_, id_)
-                smos.delete_field(index_, id_)
+                smos.remove_field(index_, id_)
                 flag = True
                 smos.get_doc(index_, id_)
                 break
