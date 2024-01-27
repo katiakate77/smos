@@ -110,7 +110,7 @@ def main():
                 )
             except KeyError:
                 logging.error('Отсутствие `platform` в ответе API')
-                pass
+                continue
             if platform_flag:
                 print(index_, id_)
                 smos.remove_field(index_, id_)
