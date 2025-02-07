@@ -1,3 +1,3 @@
 # SMOS -> Elasticsearch REST API
 
-Remove a field from a Elasticsearch document.
+Remove a field from an Elasticsearch document.
